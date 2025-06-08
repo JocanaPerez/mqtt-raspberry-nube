@@ -3,7 +3,7 @@ FROM nodered/node-red:latest
 # Copia tus archivos de flujo y dependencias
 COPY package.json /data/package.json
 COPY flows.json /data/flows.json
-COPY settings.js /data/settings.js
+COPY settings.js /opt/render/.node-red/settings.js
 
 # Expón el puerto por defecto de Node-RED
 EXPOSE 1880
